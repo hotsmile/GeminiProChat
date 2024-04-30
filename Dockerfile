@@ -1,6 +1,9 @@
 # Use node:alpine as the base image
 FROM node:18.15-alpine
 
+# 设置环境变量
+ENV COREPACK_ENABLE_STRICT=0
+
 # Set the working directory
 WORKDIR /usr/src
 
